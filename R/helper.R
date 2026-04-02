@@ -77,10 +77,10 @@ upload_file <- function(dataset) {
     stop("Please provide a data frame or a path to a CSV file")
   }
   if (is.data.frame(dataset)) {
-    write.csv(dataset, file.path(tempdir(), "upload_dataset.csv"), row.names = FALSE, fileEncoding = "UTF-8", quote = FALSE)
-    upload_file = fileUpload(file.path(tempdir(), "upload_dataset.csv"))
+    utils::write.csv(dataset, file.path(tempdir(), "upload_dataset.csv"), row.names = FALSE, fileEncoding = "UTF-8", quote = FALSE)
+    upload_file = RCurl::fileUpload(file.path(tempdir(), "upload_dataset.csv"))
   } else {
-    upload_file = fileUpload(dataset)
+    upload_file = RCurl::fileUpload(dataset)
   }
   return(upload_file)
 }
@@ -90,7 +90,7 @@ bef.goto.dataset_page <- function(id) {
   base_url = bef.options("url")
   segment = "/datasets/"
   id = id
-  browseURL(paste0(base_url, segment, id))
+  utils::browseURL(paste0(base_url, segment, id))
 }
 
 # go to proposal page
@@ -98,7 +98,7 @@ bef.goto.proposal_page <- function(id) {
   base_url = bef.options("url")
   segment = "/paperproposals/"
   id = id
-  browseURL(paste0(base_url, segment, id))
+  utils::browseURL(paste0(base_url, segment, id))
 }
 
 

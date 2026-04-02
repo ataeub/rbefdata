@@ -25,6 +25,6 @@ bef.portal.get.categories_for <- bef.get.categories_for <- function(datagroup_id
     msg = sprintf("Datagroups (id=%d) not found or not accessible. Please check your credentials!", id)
     stop(msg)
   }
-  dataframe = read.csv(text = response_body)
+  dataframe = utils::read.csv(text = response_body)
   return(dataframe)
 }
