@@ -24,7 +24,7 @@ Author: Claas-Thido Pfaff [cre, aut],
   Alexander Täuber [aut],
   Karin Nadrowski [aut],
   Xingxing Man [aut]
-Maintainer: Claas-Thido Pfaff <cpfaff@gfbio.org>
+Maintainer: Alexander Täuber <alexander.taeuber@idiv.de>
 NeedsCompilation: no
 Repository: CRAN
 RoxygenNote: 7.3.3
