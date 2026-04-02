@@ -1,5 +1,5 @@
 Package: rbefdata
-Title: BEFdata R package
+Title: BEFdata R Package
 Version: 0.4.0
 Authors@R: c(person("Claas-Thido", "Pfaff",
     email="cpfaff@gfbio.org", role=c("cre","aut")),
