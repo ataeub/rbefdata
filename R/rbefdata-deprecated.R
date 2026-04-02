@@ -6,12 +6,20 @@
 #'  \strong{Deprecated functions} \tab \strong{Replacement} \cr
 #'  \code{bef.portal.get.dataset_list} \tab \code{\link{bef.portal.get.datasets.for_keyword}} \cr
 #'  \code{bef.portal.get.proposal} \tab \code{\link{bef.portal.get.datasets.for_proposal}} \cr
+#'  \code{bef.portal.vizualize.keywords} \tab \code{\link{bef.portal.visualize.keywords}} \cr
 #' }
 #'
 #' @name rbefdata-deprecated
-#' @aliases bef.portal.get.dataset_list bef.portal.get.proposal
-#' @export bef.portal.get.dataset_list bef.portal.get.proposal
+#' @aliases bef.portal.get.dataset_list bef.portal.get.proposal bef.portal.vizualize.keywords
+#' @export bef.portal.get.dataset_list bef.portal.get.proposal bef.portal.vizualize.keywords
 #' @keywords internal
+
+## version 0.3.5 -> 0.4.0 deprecates
+#' @rdname rbefdata-deprecated
+bef.portal.vizualize.keywords <- function(...) {
+  .Deprecated("bef.portal.visualize.keywords")
+  bef.portal.visualize.keywords(...)
+}
 
 ## version 0.3 -> 0.4 deprecates
 #' @rdname rbefdata-deprecated
