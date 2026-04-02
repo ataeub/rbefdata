@@ -1,3 +1,12 @@
+rbefdata 0.4.0
+==================
+* Updated author credentials
+* Updated zzz.R with current working URL of BEF-China data base
+* Changed the function name `bef.portal.vizualize.keywords()` to `bef.portal.visualize.keywords()`
+* Changed -package.R file to modern roxygen standard
+* Fix some library calls that have come up in `check()`
+* Fixed the license format
+
 rbefdata 0.3.5
 ==================
 
