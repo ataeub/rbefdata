@@ -11,7 +11,6 @@ Description: Basic R package to access data structures offered by any
 Suggests: ggplot2, plyr
 Imports: XML, RCurl, rjson, wordcloud, rtematres, RColorBrewer
 License: MIT + file LICENSE
-URL: https://github.com/befdata/rbefdata
 Collate: 'bef.options.R' 'zzz.R' 'rbefdata-package.R'
         'bef.portal.get.dataset.R' 'bef.portal.get.proposal.R'
         'bef.portal.get.metadata.R' 'bef.portal.get.keywords.R'
