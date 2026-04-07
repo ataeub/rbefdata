@@ -8,8 +8,15 @@
 \description{
 Basic R package to access data structures offered by any BEFdata portal instance.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ataeub/rbefdata}
+}
+
+}
 \author{
-\strong{Maintainer}: Claas-Thido Pfaff \email{cpfaff@gfbio.org}
+\strong{Maintainer}: Claas-Thido Pfaff \email{ctpfaff@arcor.de}
 
 Authors:
 \itemize{
