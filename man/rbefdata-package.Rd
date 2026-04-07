@@ -4,16 +4,9 @@
 \name{rbefdata-package}
 \alias{rbefdata}
 \alias{rbefdata-package}
-\title{rbefdata: BEFdata R package}
+\title{rbefdata: BEFdata R Package}
 \description{
 Basic R package to access data structures offered by any BEFdata portal instance.
-}
-\seealso{
-Useful links:
-\itemize{
-  \item \url{https://github.com/befdata/rbefdata}
-}
-
 }
 \author{
 \strong{Maintainer}: Claas-Thido Pfaff \email{cpfaff@gfbio.org}
