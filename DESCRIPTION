@@ -2,7 +2,7 @@ Package: rbefdata
 Title: BEFdata R Package
 Version: 0.4.0
 Authors@R: c(person("Claas-Thido", "Pfaff",
-    email="cpfaff@gfbio.org", role=c("cre","aut")),
+    email="ctpfaff@arcor.de", role=c("cre","aut")),
     person("Alexander", "Täuber", email="alexander.taeuber@idiv.de", role=c("aut")),
     person("Karin", "Nadrowski", email="nadrowski@uni-leipzig.de", role="aut"),
     person("Xingxing", "Man", email="manxingxing@gmail.com", role="aut"))
