@@ -36,7 +36,7 @@ bef.portal.get.datasets.for_proposal <- bef.get.datasets.for_proposal <- functio
   if (getCurlInfo(curl)$response.code != 200) {
     stop("Proposal not found or not accessible. Please check your credentials and make sure you have access right for it.")
   }
-  proposal_data = read.csv(text = proposal_raw_csv)
+  proposal_data = utils::read.csv(text = proposal_raw_csv)
   datasets = lapply(proposal_data$ID, function(x) bef.portal.get.dataset(id = x))
   return(datasets)
 }

@@ -20,14 +20,14 @@ bef.portal.get.attachments <- bef.get.attachments <- bef.get.attachments_for <- 
   if (getCurlInfo(curl)$response.code != 200) {
     stop("Dataset not found or not accessible. Please check your credentials and make sure you have access to it")
   }
-  files = read.csv(text = freeformats_csv, stringsAsFactors=F)
+  files = utils::read.csv(text = freeformats_csv, stringsAsFactors=F)
   if (nrow(files)) {
     if (!file.exists(directory)) dir.create(directory)
     files$path = file.path(directory, sapply(files$Filename, suggest_filename, dir = directory, USE.NAMES=T))
     for (i in seq_len(nrow(files))) {
       f = CFILE(files$path[i], mode="wb")
       cat(sprintf("Saving %s => %s\n", sQuote(files$Filename[i]), sQuote(files$path[i])))
-      flush.console()
+      utils::flush.console()
       curlPerform(url = files$URL[i], writedata = f@ref)
       close(f)
     }

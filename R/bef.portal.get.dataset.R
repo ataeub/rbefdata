@@ -42,7 +42,7 @@ bef.portal.get.dataset <-  bef.get.dataset <- bef.get.dataset_by <- bef.portal.g
     msg = sprintf("Dataset(id=%d) not found or not accessible. Please check your credentials and make sure you have access right for it.", id)
     stop(msg)
   }
-  dataset = read.csv(text = response_body)
+  dataset = utils::read.csv(text = response_body)
   metadata = bef.portal.get.metadata(id)
   attributes(dataset) = c(attributes(dataset), metadata)
   return(dataset)
@@ -75,7 +75,7 @@ bef.portal.get.datasets.for_keyword <- bef.get.datasets.for_keyword <- function(
     get_keyword_id = keyword_summary$id[position]
     keyword_datasets_api_list = (unique(unlist(lapply(get_keyword_id, function(x) paste0(keyword_url(x),".csv")))))
     dataset_list = keyword_datasets_api_list
-    dataset_info = lapply(dataset_list, function(x) read.csv(x)[,1:2])
+    dataset_info = lapply(dataset_list, function(x) utils::read.csv(x)[,1:2])
     titles = unique(unlist(lapply(dataset_info, function(x) x$title)))
     ids = unique(unlist(lapply(dataset_info, function(x) x$id)))
     id_title_df = data.frame(id = ids, title = titles)
