@@ -1,13 +1,14 @@
 Package: rbefdata
 Title: BEFdata R Package
 Version: 0.4.0
-Authors@R: c(person("Claas-Thido", "Pfaff",
-    email="ctpfaff@arcor.de", role=c("cre","aut")),
-    person("Alexander", "Täuber", email="alexander.taeuber@idiv.de", role=c("aut")),
+Authors@R: c(
+    person("Alexander", "Täuber", email="alexander.taeuber@idiv.de", role=c("cre", "aut")),
+    person("Claas-Thido", "Pfaff", email="ctpfaff@arcor.de", role=c("aut")),
     person("Karin", "Nadrowski", email="nadrowski@uni-leipzig.de", role="aut"),
-    person("Xingxing", "Man", email="manxingxing@gmail.com", role="aut"))
+    person("Xingxing", "Man", email="manxingxing@gmail.com", role="aut")
+    )
 Description: Basic R package to access data structures offered by any
-    BEFdata portal instance.
+    "BEFdata" portal instance.
 Suggests: ggplot2, plyr
 Imports: XML, RCurl, rjson, wordcloud, rtematres, RColorBrewer
 License: MIT + file LICENSE

@@ -6,7 +6,7 @@
 \alias{rbefdata-package}
 \title{rbefdata: BEFdata R Package}
 \description{
-Basic R package to access data structures offered by any BEFdata portal instance.
+Basic R package to access data structures offered by any "BEFdata" portal instance.
 }
 \seealso{
 Useful links:
@@ -16,11 +16,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Claas-Thido Pfaff \email{ctpfaff@arcor.de}
+\strong{Maintainer}: Alexander Täuber \email{alexander.taeuber@idiv.de}
 
 Authors:
 \itemize{
-  \item Alexander Täuber \email{alexander.taeuber@idiv.de}
+  \item Claas-Thido Pfaff \email{ctpfaff@arcor.de}
   \item Karin Nadrowski \email{nadrowski@uni-leipzig.de}
   \item Xingxing Man \email{manxingxing@gmail.com}
 }
