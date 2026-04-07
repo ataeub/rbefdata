@@ -6,7 +6,7 @@
 \alias{rbefdata-package}
 \title{rbefdata: BEFdata R Package}
 \description{
-Basic R package to access data structures offered by any "BEFdata" portal instance.
+Basic R package to access data structures offered by any 'BEFdata' portal instance.
 }
 \seealso{
 Useful links:

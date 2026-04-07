@@ -8,7 +8,7 @@ Authors@R: c(
     person("Xingxing", "Man", email="manxingxing@gmail.com", role="aut")
     )
 Description: Basic R package to access data structures offered by any
-    "BEFdata" portal instance.
+    'BEFdata' portal instance.
 Suggests: ggplot2, plyr
 Imports: XML, RCurl, rjson, wordcloud, rtematres, RColorBrewer
 License: MIT + file LICENSE
@@ -21,8 +21,8 @@ Collate: 'bef.options.R' 'zzz.R' 'rbefdata-package.R'
         'helper.R' 'bef.portal.get.attachments.R'
         'rbefdata-deprecated.R' 'rbefdata-defunct.R'
         'bef.portal.visualize.R'
-Author: Claas-Thido Pfaff [cre, aut],
-  Alexander Täuber [aut],
+Author: Alexander Täuber [cre, aut],
+  Claas-Thido Pfaff [aut],
   Karin Nadrowski [aut],
   Xingxing Man [aut]
 Maintainer: Alexander Täuber <alexander.taeuber@idiv.de>
